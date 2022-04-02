@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Replacements = () => {
+const Replacements = props => {
     return <h1>Replacements Work!</h1>
 };
 
