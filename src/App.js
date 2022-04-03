@@ -6,7 +6,8 @@ import MainNavigation from './shared/components/Navigation/MainNavigation';
 import Inventory from './user/pages/Inventory';
 import Replacements from './user/pages/Replacements';
 import RMA from './user/pages/RMA';
-
+import UserRMAList from './hardware/pages/UserRMAList';
+import HardwareItem from './hardware/components/HardwareItem';
 const App = () => {
     return( 
         <Router>
@@ -18,6 +19,9 @@ const App = () => {
             </Route>
             <Route path="/hardware/new" exact>
                 <Hardware />
+            </Route>
+            <Route path="/:id/rma" exact>
+                <UserRMAList/>
             </Route>
             <Route path="/hardware/inventory" exact>
                 <Inventory />
