@@ -23,12 +23,26 @@ const UserRMA = props => {
         {props.items.map(RMA => (
         <HardwareItem
         key={RMA.id}
-        id={RMA.id}
-        node = {RMA.node}
-        status = {RMA.status}
+        // id={RMA.id}
+        // node = {RMA.node}
+        // status = {RMA.status}
         DateOpened = {RMA.DateOpened}
-        DateClosed = {RMA.DateCLosed}
+        DateClosed = {RMA.DateClosed}
         Description = {RMA.Description}
+        Initiator = {RMA.Initiator}
+        status = {RMA.status}
+        RMANumber = {RMA.RMANumber}
+        RMADateStart = {RMA.DateStart}
+        RMADateEnd = {RMA.DateEnd}
+        ShippingType = {RMA.ShippingType}
+        OutGoingTracking = {RMA.OutGoingTracking}
+        OilorAir = {RMA.OilorAir}
+        RMAHardware = {RMA.RMAHardware}
+        HardwareModelNumber = {RMA.HardwareModelNumber}
+        HardwareSerialNumber = {RMA.HardwareSerialNumber}
+        ChassisSerialNumber = {RMA.ChassisSerialNumber}
+        Hostname = {RMA.Hostname}
+        ProblemDescription = {RMA.ProblemDescription}
         creatorID = {RMA.creator}
         />
         ))}
@@ -36,3 +50,20 @@ const UserRMA = props => {
 };
 
 export default UserRMA;
+/*
+initiator   = todd
+RMA Number = FR19160122
+RMA Date start
+RMA Date End
+Shipping Type
+Outgoing Tracking
+Received
+Oil/Air
+RMA Hardware
+Hardware M/N (model number)
+Hardware S/N
+Chassis S/N
+Hostname
+Problem Description
+
+*/

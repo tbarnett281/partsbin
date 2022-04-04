@@ -9,12 +9,24 @@ const HardwareItem = props => {
         <Card className="place-item__content">
           
         <div className="place-item__info">
-            <h2>{props.node}</h2>
-            <h3>{props.status}</h3>
-            <h3>{props.DateOpened}</h3>
-            <h3>{props.DateClosed}</h3>
-            <h3>{props.creatorID}</h3>
-            <p>{props.Description}</p>
+        <h2>{props.Hostname}</h2>
+        <h4>RMAHardware: {props.RMAHardware}</h4>
+        <h5>RMA Number: {props.RMANumber}</h5>
+        <h5>RMA ID: {props.ID} </h5>
+        <h5>Hostname: {props.Hostname}</h5>
+        <h5>Status: {props.status}</h5>
+        <h5>Date Opened: {props.DateOpened}</h5>
+        <h5>Date Closed: {props.DateClosed}</h5>
+        <h5>Initiator : {props.Initiator}</h5>
+        <h5>RMA Number : {props.RMANumber}</h5>
+        <h5>Shipping Type: {props.ShippingType}</h5>
+        <h5>Outgoing Tracking: {props.OutGoingTracking}</h5>
+        <h5>OilorAir: {props.OilorAir}</h5>
+        <h5>HardwareModelNumber: {props.HardwareModelNumber}</h5>
+        <h5>HardwareSerialNumber: {props.HardwareSerialNumber}</h5>
+        <h5>ChassisSerialNumber: {props.ChassisSerialNumber}</h5>
+        <h5>Creator: {props.creatorID}</h5>
+        <p>Description: {props.ProblemDescription}</p>
         </div>
         <div className="place-item__actions">
             <button>Status</button>
