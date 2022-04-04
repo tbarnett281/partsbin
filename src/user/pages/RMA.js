@@ -1,7 +1,9 @@
 import React from 'react';
 
 const RMA = () => {
-    return <h1>RMA Works!</h1>
+    return <form className="place-form">
+        this is a form
+    </form>
 };
 
 export default RMA;

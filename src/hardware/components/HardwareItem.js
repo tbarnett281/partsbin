@@ -3,6 +3,7 @@ import './UserRMA';
 import './HardwareItem.css';
 import '../pages/UserRMAList';
 import Card from '../../shared/components/UIElements/Card';
+import Button from '../../shared/components/FormElements/Button';
 
 const HardwareItem = props => {
     return <li className = "place-item">
@@ -29,9 +30,8 @@ const HardwareItem = props => {
         <p>Description: {props.ProblemDescription}</p>
         </div>
         <div className="place-item__actions">
-            <button>Status</button>
-            <button>Edit</button>
-            <button>Delete</button>
+            <Button>Edit</Button>
+            <Button danger>Delete</Button>
         </div>
         </Card>
     </li>

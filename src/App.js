@@ -9,6 +9,7 @@ import RMA from './user/pages/RMA';
 import UserRMAList from './hardware/pages/UserRMAList';
 import HardwareItem from './hardware/components/HardwareItem';
 import UserItem from './user/components/UsersItem';
+import NewRMA from './user/pages/NewRMA';
 const App = () => {
     return( 
         <Router>
@@ -31,6 +32,9 @@ const App = () => {
                 <Replacements />
             </Route>
             <Route path="/hardware/rma" exact>
+                <RMA />
+            </Route>
+            <Route path="/hardware/create/rma" exact>
                 <RMA />
             </Route>
 

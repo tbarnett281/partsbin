@@ -11,7 +11,7 @@ const NavLinks = props => {
         <NavLink to = '/hardware/inventory'>Inventory</NavLink>
     </li>
     <li>
-        <NavLink to = '/hardware/rma'>RMA</NavLink>
+        <NavLink to = '/hardware/create/rma'>RMA</NavLink>
     </li>
     <li>
         <NavLink to = '/hardware/replacements'>Hardware Replacements</NavLink>
