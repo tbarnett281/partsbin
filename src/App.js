@@ -8,6 +8,7 @@ import Replacements from './user/pages/Replacements';
 import RMA from './user/pages/RMA';
 import UserRMAList from './hardware/pages/UserRMAList';
 import HardwareItem from './hardware/components/HardwareItem';
+import UserItem from './user/components/UsersItem';
 const App = () => {
     return( 
         <Router>

@@ -1,5 +1,6 @@
 import React from 'react';
 import UserRMA from '../components/UserRMA';
+import { useParams } from 'react-router-dom';
 
 const DUMMY_RMA = [
     {
@@ -20,7 +21,7 @@ const DUMMY_RMA = [
         HardwareSerialNumber: 'HW99999933333333',
         ChassisSerialNumber: 'Chassis88887777',
         ProblemDescription: 'nvme failed',
-        creator: 'taylor'
+        creator: 'u1'
     },
     {
         id: 'p2',
@@ -40,12 +41,16 @@ const DUMMY_RMA = [
         HardwareSerialNumber: 'HW99999933333333',
         ChassisSerialNumber: 'Chassis88887777',
         ProblemDescription: 'nvme failed',
-        creator: 'taylor'
+        creator: 'u2'
     }
 ]
 
 const UserRMAList = () => {
-    return <UserRMA items={DUMMY_RMA}/>
+    const id = useParams().id;
+    console.log(id);
+    const loadedRMA = DUMMY_RMA.filter(RMA => id === RMA.creator);
+
+    return <UserRMA items={loadedRMA}/>
 };
 
 export default UserRMAList;

@@ -21,7 +21,7 @@ const HardwareItem = props => {
         <h5>RMA Number : {props.RMANumber}</h5>
         <h5>Shipping Type: {props.ShippingType}</h5>
         <h5>Outgoing Tracking: {props.OutGoingTracking}</h5>
-        <h5>OilorAir: {props.OilorAir}</h5>
+        <h5>Oil or Air: {props.OilorAir}</h5>
         <h5>HardwareModelNumber: {props.HardwareModelNumber}</h5>
         <h5>HardwareSerialNumber: {props.HardwareSerialNumber}</h5>
         <h5>ChassisSerialNumber: {props.ChassisSerialNumber}</h5>

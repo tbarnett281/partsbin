@@ -50,20 +50,3 @@ const UserRMA = props => {
 };
 
 export default UserRMA;
-/*
-initiator   = todd
-RMA Number = FR19160122
-RMA Date start
-RMA Date End
-Shipping Type
-Outgoing Tracking
-Received
-Oil/Air
-RMA Hardware
-Hardware M/N (model number)
-Hardware S/N
-Chassis S/N
-Hostname
-Problem Description
-
-*/
