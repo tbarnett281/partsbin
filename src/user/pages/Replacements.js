@@ -1,7 +1,16 @@
 import React from 'react';
+import { useFormik } from 'formik';
 
-const Replacements = props => {
-    return <h1>Replacements Work! Taylor</h1>
-};
+
+function Replacements() {
+    const formik = useFormik({})
+    return (
+        <div>
+            <form>
+                This is working
+            </form>
+        </div>
+    )
+}
 
 export default Replacements;
