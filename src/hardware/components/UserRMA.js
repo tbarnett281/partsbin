@@ -12,7 +12,7 @@ const UserRMA = props => {
             <Card>
                 <h2>
                     No RMA's found for specific user.
-                    <button> Create RMA </button>
+                    <button > Create RMA </button>
                 </h2>
             </Card>
         </div>
